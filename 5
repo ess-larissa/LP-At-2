@@ -1,0 +1,19 @@
+def inverter_letras(frase):
+    # Separa a frase em palavras
+    palavras = frase.split()
+    nova_frase = []
+
+    # Inverte as letras de cada palavra
+    for palavra in palavras:
+        palavra_invertida = palavra[::-1]  # Inverte a palavra
+        nova_frase.append(palavra_invertida)
+
+    # Une as palavras invertidas para formar a nova frase
+    nova_frase = ' '.join(nova_frase)
+    return nova_frase
+
+# Exemplo de uso da função
+frase_original = "Esta é uma frase de exemplo"
+frase_invertida = inverter_letras(frase_original)
+print(f"Frase original: {frase_original}")
+print(f"Frase com letras invertidas: {frase_invertida}")
